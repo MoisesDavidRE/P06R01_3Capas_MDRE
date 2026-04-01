@@ -11,17 +11,8 @@ namespace ShopWeb
 {
 
 
-    public partial class Ordenes
+    public partial class Clientes
     {
-
-        /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
         /// pnlMensaje control.
@@ -60,13 +51,13 @@ namespace ShopWeb
         protected global::System.Web.UI.WebControls.Button btnNuevo;
 
         /// <summary>
-        /// gvOrdenes control.
+        /// gvClientes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvOrdenes;
+        protected global::System.Web.UI.WebControls.GridView gvClientes;
 
         /// <summary>
         /// pnlFormulario control.
@@ -78,49 +69,40 @@ namespace ShopWeb
         protected global::System.Web.UI.WebControls.Panel pnlFormulario;
 
         /// <summary>
-        /// hdfIdOrden control.
+        /// hdfIdCliente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hdfIdOrden;
+        protected global::System.Web.UI.WebControls.HiddenField hdfIdCliente;
 
         /// <summary>
-        /// ddlProduct control.
+        /// txtName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlProduct;
+        protected global::System.Web.UI.WebControls.TextBox txtName;
 
         /// <summary>
-        /// ddlClient control.
+        /// txtMidName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlClient;
+        protected global::System.Web.UI.WebControls.TextBox txtMidName;
 
         /// <summary>
-        /// txtFecha control.
+        /// txtEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFecha;
-
-        /// <summary>
-        /// txtQuantity control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtQuantity;
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
 
         /// <summary>
         /// btnGuardar control.

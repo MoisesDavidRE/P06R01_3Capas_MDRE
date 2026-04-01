@@ -12,7 +12,7 @@ namespace CapaNegocios
             return d_Client.ListarClientes();
         }
 
-        public bool GuardarProducto(Client cliente)
+        public bool GuardarCliente(Client cliente)
         {
             if (cliente.Id == 0)
             {

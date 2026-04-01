@@ -59,7 +59,7 @@ namespace ShopWeb
                     MidName = txtMidName.Text.Trim()
                 };
 
-                bool resultado = N_Client.GuardarProducto(objCliente);
+                bool resultado = N_Client.GuardarCliente(objCliente);
 
                 if (resultado)
                 {

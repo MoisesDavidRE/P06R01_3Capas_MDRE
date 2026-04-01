@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace TransportesWeb
 {
-    public partial class SiteMaster : MasterPage
+    public partial class MasterPage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -2,6 +2,7 @@
 using CapaNegocios;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Web.UI.WebControls;
 
 namespace ShopWeb
@@ -25,16 +26,34 @@ namespace ShopWeb
         {
             try
             {
-                List<Order> listadoOrdenes = N_Order.ListarOrdenes();
-                gvOrdenes.DataSource = listadoOrdenes;
-                gvOrdenes.DataBind();
+                var listadoOrdenes = N_Order.ListarOrdenes();
+                var listadoProductos = N_Product.ListarProductos();
+                var listadoClientes = N_Client.ListarClientes();
 
                 if (listadoOrdenes == null || listadoOrdenes.Count == 0)
                 {
+                    gvOrdenes.DataSource = null;
+                    gvOrdenes.DataBind();
                     MostrarMensaje("No se encontraron órdenes", "info");
                 }
                 else
                 {
+                    var ordenesConNombres = from o in listadoOrdenes
+                                            join p in listadoProductos on o.IdProduct equals p.Id
+                                            join c in listadoClientes on o.IdClient equals c.Id
+                                            select new
+                                            {
+                                                Id = o.Id,
+                                                IdProduct = o.IdProduct,
+                                                ProductName = p.Name,
+                                                IdClient = o.IdClient,
+                                                ClientName = c.Name,
+                                                Fecha = o.Fecha,
+                                                Quantity = o.Quantity
+                                            };
+
+                    gvOrdenes.DataSource = ordenesConNombres.ToList();
+                    gvOrdenes.DataBind();
                     pnlMensaje.Visible = false;
                 }
             }

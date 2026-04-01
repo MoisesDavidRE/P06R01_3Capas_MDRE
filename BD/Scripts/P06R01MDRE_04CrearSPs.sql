@@ -53,7 +53,6 @@ CREATE OR ALTER PROCEDURE [dbo].[InsertProductSP]
     @Price DECIMAL
 AS
 BEGIN 
-    SET NOCOUNT ON;
     BEGIN TRANSACTION;
     BEGIN TRY
         INSERT INTO [dbo].[Product] ([Name], [Description], [Price]) 
@@ -78,7 +77,6 @@ CREATE OR ALTER PROCEDURE [dbo].[UpdateProductSP]
     @Price DECIMAL
 AS
 BEGIN
-    SET NOCOUNT ON;
     BEGIN TRANSACTION;
     BEGIN TRY
         UPDATE [dbo].[Product] SET
@@ -103,7 +101,6 @@ CREATE OR ALTER PROCEDURE [dbo].[DeleteProductSP]
     @IdProduct INT
 AS
 BEGIN
-    SET NOCOUNT ON;
     BEGIN TRANSACTION;
     BEGIN TRY
         DELETE FROM [dbo].[Product] WHERE Id = @IdProduct;
@@ -146,7 +143,6 @@ CREATE OR ALTER PROCEDURE [dbo].[InsertClientSP]
     @Email VARCHAR(50)
 AS
 BEGIN 
-    SET NOCOUNT ON;
     BEGIN TRANSACTION;
     BEGIN TRY
         INSERT INTO [dbo].[Client] ([Name], [MidName], [Email]) 
@@ -171,7 +167,6 @@ CREATE OR ALTER PROCEDURE [dbo].[UpdateClientSP]
     @Email VARCHAR(50)
 AS
 BEGIN
-    SET NOCOUNT ON;
     BEGIN TRANSACTION;
     BEGIN TRY
         UPDATE [dbo].[Client] SET
@@ -196,7 +191,6 @@ CREATE OR ALTER PROCEDURE [dbo].[DeleteClientSP]
     @IdClient INT
 AS
 BEGIN
-    SET NOCOUNT ON;
     BEGIN TRANSACTION;
     BEGIN TRY
         DELETE FROM [dbo].[Client] WHERE Id = @IdClient;

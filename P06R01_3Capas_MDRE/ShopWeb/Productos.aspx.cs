@@ -41,17 +41,6 @@ namespace ShopWeb
             }
         }
 
-        protected void btnFiltrar_Click(object sender, EventArgs e)
-        {
-            CargarProductos();
-        }
-
-        protected void btnActualizar_Click(object sender, EventArgs e)
-        {
-            ddlFiltro.SelectedIndex = 0;
-            CargarProductos();
-        }
-
         protected void btnNuevo_Click(object sender, EventArgs e)
         {
             LimpiarFormulario();

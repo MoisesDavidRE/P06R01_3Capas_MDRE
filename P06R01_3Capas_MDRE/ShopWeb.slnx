@@ -2,5 +2,5 @@
   <Project Path="CapaDatos/CapaDatos.csproj" Id="4ac045d9-9806-4055-a863-a345f37d0530" />
   <Project Path="CapaEntidades/CapaEntidades.csproj" Id="a577ee74-fa2c-4bcc-8c49-7695ef5a7c1a" />
   <Project Path="CapaNegocios/CapaNegocios.csproj" Id="6fd1898a-546b-4f22-8fa2-7c8aadafb68c" />
-  <Project Path="TransportesWeb/ShopWeb.csproj" Id="aa61a7fb-6416-464a-a1e8-8e1431f4f5be" />
+  <Project Path="ShopWeb/ShopWeb.csproj" Id="aa61a7fb-6416-464a-a1e8-8e1431f4f5be" />
 </Solution>
